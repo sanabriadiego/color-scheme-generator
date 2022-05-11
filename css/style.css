@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #1c1c1c;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.section-color-selectors{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 15px;
+}
+
+.section-color-selectors input{
+    width: 61px;
+    height: 42px;
+    
+}
+
+.section-color-selectors select{
+    width: 312px;
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+.section-color-selectors button{
+    width: 123px;
+    font-weight: 500;
+    font-size: 0.75rem;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.section-color-selectors input,
+.section-color-selectors select,
+.section-color-selectors button{
+    cursor: pointer; 
+}
+
+.section-color-selectors select,
+.section-color-selectors button{
+    font-family: inherit;
+    border: 1px solid #D1D5DB;
+
+}
+
+.section-color-bars{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 415px;
+}
+
+.section-color-codes{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 45px;
+    cursor: grab;
+}
+
+.color-code{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.75rem;
+}

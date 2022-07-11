@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 *{
     box-sizing: border-box;
 }
@@ -8,11 +10,14 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+/*MAIN*/
+
 main{
-    max-width: 550px;
     margin: 0 auto;
     background-color: #fff;
 }
+
+/*COLOR-SELECTORS*/
 
 .section-color-selectors{
     display: flex;
@@ -21,23 +26,24 @@ main{
 }
 
 .section-color-selectors input{
-    width: 61px;
-    height: 42px;
-    
+    margin-right: 10px;
+    min-width: 35px;
+    height: 35px;
 }
 
 .section-color-selectors select{
-    width: 312px;
+    margin-right: 10px;
+    width: 250px;
     padding: 0 15px;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border-radius: 6px;
 }
 
 .section-color-selectors button{
-    width: 123px;
+    min-width: 70px;
     font-weight: 500;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     background-color: #fff;
     border-radius: 4px;
 }
@@ -55,6 +61,28 @@ main{
 
 }
 
+/*BARS & CODES*/
+
+#first-color-bar{
+    background-color: #f55a5a;
+}
+
+#second-color-bar{
+    background-color: #2b283a;
+}
+
+#third-color-bar{
+    background-color: #fbf3ab;
+}
+
+#fourth-color-bar{
+    background-color: #aad1b6;
+}
+
+#fifth-color-bar{
+    background-color: #a626d3;
+}
+
 .section-color-bars{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -65,7 +93,7 @@ main{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 45px;
-    cursor: grab;
+    cursor: pointer;
 }
 
 .color-code{
@@ -74,4 +102,27 @@ main{
     align-items: center;
     font-weight: 500;
     font-size: 0.75rem;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 500px){
+
+    main{
+        max-width: 550px;
+    }
+    
+    .section-color-selectors input{
+        width: 61px;
+        height: 42px;
+    }
+    
+    .section-color-selectors select{
+        width: 312px;
+        font-size: 1rem;
+    }
+    
+    .section-color-selectors button{
+        width: 123px;
+        font-size: 0.75rem;
+    }
 }

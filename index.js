@@ -36,7 +36,7 @@ function getColorScheme(){
             `
             //I prefer not to include the "#" character on the id of each color. For that I use slice.
             colorCodesSection.innerHTML += `
-                <div onclick=copyColor("id${color.slice(1)}") id="id${color.slice(1)}" class="color-code">${color}</div>    
+                <div onclick=copyColor("id${color.slice(1)}") id="id${color.slice(1)}" class="color-code" title="Copy Hex value">${color}</div>    
             `
 
         }
